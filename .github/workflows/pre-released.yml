@@ -5,5 +5,7 @@ on:
     types:
       - prereleased
 jobs:
-  vercel: 
-   run: curl -X POST -d {} https://api.vercel.com/v1/integrations/deploy/prj_PR9tg93nyYiGwX464db0c7SPMfs6/wwO6n4XNEN
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: curl -X POST -d {} https://api.vercel.com/v1/integrations/deploy/prj_PR9tg93nyYiGwX464db0c7SPMfs6/wwO6n4XNEN
